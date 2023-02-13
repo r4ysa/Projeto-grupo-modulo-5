@@ -64,8 +64,7 @@ Solução 2: Se persistir o erro, saia do terminal clicando em CTRL+C > depois e
 Pronto esta é o site do projeto, utilize as funcionalidades.. faça login.. faça sua lista de compras!!!
 
 
-
-Equipe:
+##Equipe:
 Ana Caroline
 Jenifer Arruda
 Raysa Reis
