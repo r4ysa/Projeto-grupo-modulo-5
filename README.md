@@ -2,7 +2,7 @@
 
 ## MARKET LIST
 
-Este projeto foi realizado ao final do curso de desenvolvimento web full Stack da Resilia Educação. Nele foram abordados vários tópicos como: autenticação de usuário, validação de formulários, integração com banco de dados, segurança para senhas, rotas, modelo MVC, entre outras coisas atreladas a tecnologia em questão. 
+**Este projeto foi realizado ao final do curso de desenvolvimento web full Stack da Resilia Educação. Nele foram abordados vários tópicos como: autenticação de usuário, validação de formulários, integração com banco de dados, segurança para senhas, rotas, modelo MVC, entre outras coisas atreladas a tecnologia em questão.**
 
 No projeto você pode consultar os itens de mercado já inseridos ou se cadastrar para inserir seus próprios itens e realizar sua lista, assim como consultar por ordem de publicação ou pesquisar por itens que sejam de seu interesse. Também é possivel excluir ou editar os itens da sua lista caso queira. 
 
