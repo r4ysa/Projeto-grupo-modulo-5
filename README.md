@@ -34,6 +34,7 @@ $ npm install cookie-session
 $ npm install session-file-store
 $ npm install bcryptjs
 $ npm install connect-flash
+$ npm install nodemon
 ```
 
 ## Passo a Passo de como iniciar o MARKET LIST
