@@ -1,21 +1,20 @@
-# Projeto em grupo módulo 5
-# MARKET LIST
+# Projeto em grupo módulo 5 - Resilia
 
-Este projeto foi realizado durante um curso de Nodejs
-nele foram abordados vários tópicos como: autenticação de usuário, validação de formulários, integração com banco de dados, segurança para senhas, rotas, modelo MVC, entre outras coisas atreladas a tecnologia em questão. 
+## MARKET LIST
 
-No projeto você pode consultar os itens de mercado já inseridos ou se cadastrar para inserir seus próprios itens e realizar sua lista, assim como consultar por ordem de publicação ou pesquisar por itens que sejam de seu interesse.
-Também é possivel excluir ou editar os itens da sua lista caso queira. 
+Este projeto foi realizado ao final do curso de desenvolvimento web full Stack da Resilia Educação. Nele foram abordados vários tópicos como: autenticação de usuário, validação de formulários, integração com banco de dados, segurança para senhas, rotas, modelo MVC, entre outras coisas atreladas a tecnologia em questão. 
 
-# Files
+No projeto você pode consultar os itens de mercado já inseridos ou se cadastrar para inserir seus próprios itens e realizar sua lista, assim como consultar por ordem de publicação ou pesquisar por itens que sejam de seu interesse. Também é possivel excluir ou editar os itens da sua lista caso queira. 
+
+## Files
 
 Os arquivos estão separados seguindo o padrão MVC com separação dos Models, Controllers e View, tal como Rotas, Helpers, conexão com o Banco de Dados e Pasta publica carregando código CSS e imagens.
 
 ## Tecnologias atreladas
 
-1. NODE Js
-2. XAMPP
-3. WORK BENCH
+1. Node Js
+2. Xampp
+3. Workbench
 4. VSCode
 
 ## Configurações:
@@ -36,8 +35,6 @@ $ npm install session-file-store
 $ npm install bcryptjs
 $ npm install connect-flash
 ```
-
-<br><br>
 
 ## Passo a Passo de como iniciar o MARKET LIST
 
