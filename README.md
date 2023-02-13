@@ -1,4 +1,4 @@
-# Projeto-grupo-modulo-5
+# Projeto em grupo módulo 5
 # MARKET LIST
 
 Este projeto foi realizado durante um curso de Nodejs
