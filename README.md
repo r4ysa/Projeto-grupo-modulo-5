@@ -68,7 +68,7 @@ Equipe:
 
 <ul>
 <li>Raysa Reis</li>
-<li>Ana Caroli9ne Gonçalves</li>
+<li>Ana Caroline Gonçalves</li>
 <li>Jenifer Arruda</li>
 </ul>
 
