@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/lista.css">
+    <title>Document</title>
+</head>
+
+<br>
+<div class="users-table">
+    <div class="dashboard">
+        <div class="title-container">
+            <h2>Bem vindo(a) a sua lista de compras</h2>
+             <a href="/items/add"><button type="submit"class="botao-login"><i
+                        class="fas fa-user-plus"></i>Novo Item</button></a>
+
+        </div>
+
+        <h3>Monte aqui sua lista e <span class="roxo">Economize Muito!!</span></h3>
+
+
+        <ul>
+            {{#each tabelaitems}}
+            <li>
+                <p>Item:<span class="label">{{this.item}}</span></p>  <p>Preço:<span class="label">{{this.preco}}</span></p>
+                <!--VERIFICAR SE FUNCIONA ESSE PRECO-->
+                <span class="actions">
+                    <a href="/items/edit/{{this.id}}" class="btn">Editar</a>
+                    <form action="/items/remove" method="POST">
+                        <input type="hidden" name="id" value="{{this.id}}">
+                        <input type="submit" value="Excluir" class="btn">
+                    </form>
+                </span>
+            </li>
+            {{/each}}
+        </ul>
+        {{#if emptyTabelaitems}}
+        <p>Ainda não há nenhum item em sua lista, adcione <a href="/items/add">clicando aqui</a></p>
+        {{/if}}
+    </div>
+  
+        <div class="form-container">
+            <form action="/#busca" method="GET" id="filter-form">
+                <input type="text" name="search" placeholder="Buscar...">
+                <input type="submit" class=".dashboard .actions .btn" value="Buscar">
+            </form>
+        </div>
+
+        <div class="home-header">
+            {{#if search}}
+            <h1>Você está buscando por: <span>{{search}}</span></h1>
+            {{#if toughtsQty }}
+            <p>Foram encontrados <span>{{toughtsQty}}</span> pensamento(s)</p>
+            {{else}}
+            <p>Nenhum pensamento encontrado para o termo <span>{{search}}</span></p>
+            {{/if}}
+            {{else}}
+            <h2>Pesquise por itens adcionados a lista e confira o ultimo preço!</h2>
+            {{/if}}
+
+            <br>
+
+            <a href="/items/add"><button type="submit"class="botao-login"><i
+                        class="fas fa-user-plus"></i>Novo Item</button></a>
+
+
+            <!--<div class="users-table">
+        <div class="form-container">
+            <form action="dashboard" method="GET" id="filter-form">
+                <input type="text" name="search" placeholder="Buscar...">
+                 <input type="submit" class="btn-filter" value="Buscar" class="btn-filter"><i class="fas fa-search"></i>>
+            
+            </form>
+        </div>
+    </div>-->
+    <br>
+
+            <div class="order-container">
+                <span>Ordenar por:</span>
+                <form action="/#buscar" method="GET">
+                    <input type="hidden" name="search" value="{{this.search}}">
+                    <input type="hidden" name="order" value="new">
+                    <button type="submit"><i class="bi bi-arrow-up"></i> Mais novos</button>
+                </form>
+                <form action="/#busca" method="GET">
+                    <input type="hidden" name="search" value="{{this.search}}">
+                    <input type="hidden" name="order" value="old">
+                    <button type="submit"><i class="bi bi-arrow-down"></i> Mais antigos</button>
+                </form>
+                <a href="/#busca">Limpar</a>
+            </div>
+        </div>
+        <div class="toughts-container">
+            {{#each tabelaitems}}
+            <figure>
+                <blockquote>
+                    <h3>Item:<span>{{this.item}}</span></h3>
+                    <h3>Preço:<span>{{this.preco}}</span></h3>
+
+                </blockquote>
+                <figcaption>por <span>{{this.Usuario.name}}</span></figcaption>
+            </figure>
+            {{/each}}
+        </div>
+
+</div>
+
+</html>

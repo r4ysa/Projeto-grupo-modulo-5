@@ -1,0 +1,503 @@
+* {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* MENSAGEM  */
+
+.message {
+  margin-right: 100px;
+  height: 40px;
+  line-height: 20px;
+  padding: 1em;
+  color: #1b0023;
+  background: #adffa9;
+  border: 1px soli d#0cab01;
+  border-radius: 5px;
+  text-align: center;
+  max-width: 30%;
+  animation: alert-box 5s forwards .5;
+}
+
+@keyframes alert-box{
+  0%{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  25% {
+    transform: translateX(10%);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateX(0%);
+  }
+}
+
+/* CSS - MENU */
+
+#menu {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  justify-content: space-between;
+  width: 100%;
+  height: 85px;
+  transition: 250ms;
+  background-color: #0597F2;
+  box-shadow: 0 0 0.5em black;
+}
+
+#menu img{
+  animation: animation-logo 5s forwards .5;
+}
+
+@keyframes animation-logo{
+  0%{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  25% {
+    transform: translateX(10%);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateX(0%);
+  }
+}
+
+#menu ul {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  margin: 0;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  transition: 600ms;
+}
+
+#menu li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 15px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#menu a:hover {
+  color: #49D907;
+}
+
+.botao-login {
+  background: linear-gradient(to bottom left, #49D907 25%, #970FF2);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 105px;
+  height: 40px;
+  transition: background 500ms, color 500ms;
+}
+
+.botao-login:hover {
+  background: transparent;
+  border: 2px solid #49D907;
+  color: #49D907;
+
+}
+
+@media (max-width: 740px) {
+
+  #menu {
+    gap: 20px;
+    height: unset;
+  }
+
+  #menu img {
+    min-width: 120px;
+  }
+
+  #menu .lista {
+    flex-wrap: wrap;
+  }
+
+  #menu .lista li {
+    padding: 10px;
+  }
+}
+
+#clear {
+  clear: both;
+}
+
+#menu img {
+  width: 50%;
+}
+
+/* FIM CSS - MENU */
+
+/* CSS DA PÁGINA HOME */
+
+.img-banner {
+  width: 100%;
+  height: 40%;
+
+}
+
+/* CSS HOME - MISSÃO... */
+
+.icone {
+  width: 30px;
+}
+
+.img-empresa {
+  width: 110%;
+  margin-left: 0;
+}
+
+.titulo-sobre {
+  color: #970FF2;
+}
+
+/* FIM CSS HOME - MISSÃO... */
+
+/* CSS - HOME SLIDE DE FOTOS */
+
+#slide {
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 50px;
+}
+
+#slide h1 {
+  color: #970FF2;
+  font-size: 2.6rem;
+}
+
+#slide .col-md-4 p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.botao-slide {
+  background: linear-gradient(to bottom left, #49D907 25%, #970FF2);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 100%;
+  height: 42px;
+  border-radius: 10px;
+  transition: background 500ms, color 500ms;
+}
+
+.botao-slide:hover {
+  background: transparent;
+  border: 2px solid #970FF2;
+  color: #970FF2;
+}
+
+.carousel-item h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-shadow: 2px 5px 10px #000000;
+}
+
+.carousel-item p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-shadow: 2px 5px 10px #000000;
+}
+
+/* FIM CSS - HOME SLIDE DE FOTOS */
+
+/* CSS HOME - ENCARTE */
+
+.curva-invertida {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* FIM CSS HOME - ENCARTE */
+
+/*BARRA DE PESQUISA HOME*/
+
+.users-table {
+  width: 90%;
+  background-color: white;
+  margin: auto;
+  padding: 0 0 30px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+.users-table .form-container {
+  /*background-color: #3700B3;*/ 
+  background-color: #970FF2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.users-table .form-container #filter-form {
+  margin: auto;
+  display: flex;
+  width: 35%;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+.users-table .form-container #filter-form input {
+  border: none;
+  width: 100%;
+  height: 48px;
+  padding-left: 20px;
+  font-size: 16px;
+  color: #5f6368;
+}
+.users-table .form-container #filter-form input :focus {
+  outline: 0;
+}
+.users-table .form-container #filter-form .btn-filter {
+  background-color: none;
+  border: none;
+  color: grey;
+}
+
+/*FIM DA BUSCA*/
+
+/* CSS - RODAPÉ */
+
+#rodape {
+  background-color: #97BCE8;
+  color: white;
+}
+
+.visually-hidden {
+  margin-right: 20px;
+}
+
+.botao-rodape {
+  background: linear-gradient(to bottom left, #49D907 25%, #970FF2);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  border: none;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 105px;
+  height: 40px;
+  transition: background 500ms, color 500ms;
+  margin-left: 20px;
+}
+
+.botao-rodape:hover {
+  background: transparent;
+  border: 2px solid #970FF2;
+  color: #970FF2;
+}
+
+.icones-rodape li {
+  justify-content: space-between;
+  margin-left: 15px;
+}
+
+#rodape h5,
+p {
+  color: #000000;
+}
+
+.e{
+  color: #000000;
+}
+
+/* FIM CSS - RODAPÉ */
+
+/* CSS HOME - ENCARTE */
+
+.encarte img{
+  width: 100%;
+  display: block;
+}
+
+.encarte{
+  align-items: center;
+}
+
+.encarte h2{
+  font-size: 50px;
+  text-align: center;
+  color:#970FF2;
+  margin-top: 0;
+}
+
+.botao-ofertas {
+  background: linear-gradient(to bottom left, #49D907 25%, #970FF2);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  border: none;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 220px;
+  height: 40px;
+  transition: background 500ms, color 500ms;
+  margin-left: 390px;
+}
+
+.botao-ofertas:hover {
+  background: transparent;
+  border: 2px solid #970FF2;
+  color: #970FF2;
+}
+
+/* FIM CSS HOME - ENCARTE */
+
+/* CSS PARTE DE BUSCA */
+.home-header {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-header h1 {
+  margin-bottom: 1em;
+}
+
+.home-header span {
+  color:#970FF2;
+}
+
+.home-header p {
+  margin-bottom: 1.2em;
+}
+
+.home-header form {
+  margin-bottom: 1em;
+}
+
+.home-header input {
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: 0.5em;
+  margin-right: 1em;
+}
+
+.home-header input[type='text'] {
+  width: 60%;
+}
+
+.home-header input::placeholder {
+  color: #fff;
+}
+
+.order-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto 1em;
+}
+
+.order-container span {
+  font-weight: bold;
+  color: #fff;
+}
+
+.order-container form {
+  margin: 0;
+}
+
+.order-container button {
+  margin-bottom: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.order-container button:hover,
+.order-container a:hover {
+  color: #970FF2;
+}
+
+.order-container span,
+.order-container button,
+.order-container a {
+  margin: 0 10px;
+}
+
+.order-container i {
+  color: #970FF2;
+}
+
+.toughts-container figure {
+  border-bottom: 1px solid #333;
+  padding: 0.5em;
+  max-width: 50%;
+  margin: 0 auto 1em;
+}
+
+.toughts-container blockquote {
+  font-style: italic;
+  font-size: 2em;
+  margin-bottom: 0.4em;
+}
+
+.toughts-container span {
+  color: #970FF2;
+}
+
+#submit{
+  background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+  width: 100%;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+#submit:hover{
+  background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+}
+
+.roxo{
+  color: #970FF2;
+}
+
+
+/* FIM CSS PARTE DE BUSCA */
+

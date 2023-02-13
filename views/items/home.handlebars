@@ -1,0 +1,182 @@
+<body action="/" method="GET">
+
+    <br><br><br>
+
+    <!-- BANNER DE INTRODUÇÃO -->
+
+    <img src="/img/banner.png" alt="banner" class="img-banner">
+
+    <!-- CAROUSEL E QUEM SOMOS -->
+
+    <br><br>
+
+    <div class="container">
+        <div class="row" id="slide">
+
+            <div id="carouselExampleControls" class="col-md-7 carousel slide" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="img-slide w-100" src="/img/1.png" alt="programando">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="img-slide w-100" src="/img/2.png" alt="programando">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img class="img-slide w-100" src="/img/3.png" alt="programando">
+                    </div>
+
+                </div>
+
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+
+            </div>
+
+            <div class="col-md-4">
+                <h1 id="quem-somos">Quem somos</h1>
+                <p>Elaborada pensando em praticidade e no meio ambiente, a Market List, foi desenvolvida para te
+                    auxiliar na rotina diária, semanal ou mensal de compras. Com ela é possível fazer sua lista de
+                    mercado completa, diretamento no nosso site, se livrando de papéis e canetas padrões do futuro
+                    passado. Um novo método de controle anotações! </p>
+                <a href="/"><button class="botao-slide mt-1">Fale conosco</button></a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- MISSÃO, VISÃO E VALORES -->
+
+    <div class="container px-4 py-5" id="featured-3">
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <img src="/img/target.png" alt="missao" class="icone">
+                </div>
+                <h3 class="titulo-sobre fs-2">Missão</h3>
+                <p>Transformar detalhes da rotina, em um momento descontraído e prático.</p>
+            </div>
+            <div class="feature col">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <img src="/img/visao.png" alt="visao" class="icone">
+                </div>
+                <h3 class="titulo-sobre fs-2">Visão</h3>
+                <p>Promover a tecnologia para atividades domésticas e/ou rotineiras.</p>
+            </div>
+            <div class="feature col">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <img src="/img/maos.png" alt="valores" class="icone">
+                </div>
+                <h3 class="titulo-sobre fs-2">Valores</h3>
+                <p>Ser uma empresa que desenvolve e inova nas formas de lidar com afezeres do dia a dia,
+                    melhorando desperdícios para o meio ambiente, e promover avanço da qualidade de vida.</p>
+            </div>
+        </div>
+    </div>
+
+    <img style="position: relative;" class="curva-invertida " src="/img/curva.png" alt="fundo">
+
+    <div class="encarte container">
+
+        <h2>Busque Ofertas</h2>
+        <p>Aqui você pode buscar as melhores ofertas em mercados e hortifrutis próximos a você. Toda semana
+            disponibilizamos encartes com as melhores promoções. Ficou interessado? Clique no botão abaixo e encontre o
+            melhor preço. </p>
+        <br>
+        <img src="/img/encarte.png" alt="encarte">
+        <br>
+        <a href="/"><button class="botao-ofertas mt-1">Buscar ofertas</button></a>
+
+    </div>
+
+    <br><br><br>
+
+    <div id="busca" class="users-table">
+        <div class="form-container">
+            <form action="/#busca" method="GET" id="filter-form">
+                <input type="text" name="search" placeholder="Buscar...">
+                <input type="submit" class="btn" value="Buscar">
+            </form>
+        </div>
+
+        <div class="home-header">
+            {{#if search}}
+            <h1>Você está buscando por: <span>{{search}}</span></h1>
+            {{#if tabelaitemsQty }}
+            <p>Foram encontrados <span>{{tabelaitemsQty}}</span> pensamento(s)</p>
+            {{else}}
+            <p>Não encontramos "<span>{{search}}</span>"" em sua lista</p>
+            <h3>adcione o novo item com o botão abaixo</h3>
+            {{/if}}
+            {{else}}
+            <h2>Pesquise por itens adcionados a lista e confira o ultimo preço!</h2>
+            {{/if}}
+
+             <br>
+              <a href="/items/add"><button type="submit"class="botao-login"><i
+                        class="fas fa-user-plus"></i>Novo Item</button></a>
+            <br>
+
+
+            <!--<div class="users-table">
+        <div class="form-container">
+            <form action="dashboard" method="GET" id="filter-form">
+                <input type="text" name="search" placeholder="Buscar...">
+                 <input type="submit" class="btn-filter" value="Buscar" class="btn-filter"><i class="fas fa-search"></i>>
+            
+            </form>
+        </div>
+    </div>-->
+
+            <div class="order-container">
+                <span>Ordenar por:</span>
+                <form action="/#busca" method="GET">
+                    <input type="hidden" name="search" value="{{this.search}}">
+                    <input type="hidden" name="order" value="new">
+                    <button type="submit"><i class="bi bi-arrow-up"></i> Mais novos</button>
+                </form>
+                <form action="/#busca" method="GET">
+                    <input type="hidden" name="search" value="{{this.search}}">
+                    <input type="hidden" name="order" value="old">
+                    <button type="submit"><i class="bi bi-arrow-down"></i> Mais antigos</button>
+                </form>
+                <a href="/#busca">Limpar</a>
+            </div>
+        </div>
+        <div class="toughts-container">
+            {{#each tabelaitems}}
+            <figure>
+                <blockquote>
+                    <h3>Item:<span>{{this.item}}</span></h3>
+                    <h3>Preço:<span>{{this.preco}}</span></h3>
+
+                </blockquote>
+                <figcaption>por <span>{{this.Usuario.name}}</span></figcaption>
+            </figure>
+            {{/each}}
+        </div>
+
+
+    </div>
+
+    
+
+</body>
