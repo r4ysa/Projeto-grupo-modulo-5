@@ -18,20 +18,26 @@ Os arquivos estão separados seguindo o padrão MVC com separação dos Models, 
 3. WORK BENCH
 4. VSCode
 
+## Configurações:
 
-## Dependências
+Para executar este projeto, é necessário realizar as seguintes instalações localmente usando npm:
 
- 1. MySQL2 
- 2. Express
- 3. Sequelize
- 4. Express-Handlebars
- 5. Express-Session
- 6. Express-Flash
- 7. Cookie-parser
- 8. Cookie-session
- 9. Session-File-Store
- 10. Bribptyjs
- 11. connect-flash
+```
+$ npm init -y
+$ npm install mysql2
+$ npm install express
+$ npm install sequelize
+$ npm install express-handlebars
+$ npm install express-session
+$ npm install express-flash
+$ npm install cookie-parser
+$ npm install cookie-session
+$ npm install session-file-store
+$ npm install bcryptjs
+$ npm install connect-flash
+```
+
+<br><br>
 
 ## Passo a Passo de como iniciar o MARKET LIST
 
