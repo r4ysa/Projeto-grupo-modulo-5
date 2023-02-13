@@ -65,8 +65,10 @@ Pronto esta é o site do projeto, utilize as funcionalidades.. faça login.. fa�
 
 
 ##Equipe:
-Ana Caroline
-Jenifer Arruda
-Raysa Reis
-Turno: Tarde
-Unidade: Senac Bonsucesso
+
+<ul>
+<li>Raysa Reis</li>
+<li>Ana Caroli9ne Gonçalves</li>
+<li>Jenifer Arruda</li>
+</ul>
+
